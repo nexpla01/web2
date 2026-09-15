@@ -1657,3 +1657,152 @@ p  { line-height: 1.65; }
 @media (max-width: 900px) {
   .hero-demo { display: none; }
 }
+
+/* ============================================================
+   TYPOGRAPHY & CONTRAST FIXES
+   All opacity/size issues addressed in one pass.
+   ============================================================ */
+
+/* ── Base muted colour — darker for WCAG AA on light bg ────── */
+:root {
+  --muted: #3D5450;
+}
+
+/* ── Hero ───────────────────────────────────────────────────── */
+.hero-label  { font-size: 0.84rem; color: rgba(255,255,255,0.80); }
+.hero-sub    { color: rgba(255,255,255,0.78); font-size: 1.08rem; }
+.stat span   { color: rgba(255,255,255,0.68); font-size: 0.84rem; }
+
+/* ── Section labels (eyebrows) — slightly bigger ────────────── */
+.section-label       { font-size: 0.84rem; }
+.section-label.light { color: rgba(255,255,255,0.70); }
+
+/* ── Section intro on dark bg ───────────────────────────────── */
+.section-intro.light { color: rgba(255,255,255,0.78); font-size: 1.05rem; }
+
+/* ── Why Now — compare labels & bar labels ───────────────────── */
+.compare-label      { font-size: 0.82rem; color: var(--muted); }
+.compare-label.teal { color: var(--teal); }
+.econ-bar span      { font-size: 0.88rem; color: var(--muted); }
+
+/* ── Paradox block ──────────────────────────────────────────── */
+.paradox-text { font-size: 1.02rem; color: rgba(255,255,255,0.84); }
+.paradox-note { font-size: 0.90rem; color: rgba(255,255,255,0.65); line-height: 1.65; }
+.paradox-label { font-size: 0.82rem; }
+
+/* ── Insight section (dark bg) ──────────────────────────────── */
+.insight-card h4 { font-size: 1rem;    color: var(--white); }
+.insight-card p  { font-size: 0.92rem; color: rgba(255,255,255,0.70); line-height: 1.65; }
+
+/* ── Transformation section ─────────────────────────────────── */
+.erp-field label  { font-size: 0.80rem; color: var(--muted); }
+.field-value      { font-size: 0.82rem; color: var(--ink); }
+.etm-row          { font-size: 0.78rem; }
+.erp-actions button { font-size: 0.78rem; color: var(--muted); }
+.ai-greeting      { font-size: 0.90rem; }
+.ai-greeting small{ font-size: 0.82rem; color: var(--muted); }
+.ai-user-msg      { font-size: 0.88rem; }
+.arc-row small    { font-size: 0.78rem; color: var(--muted); }
+.arc-actions button { font-size: 0.80rem; }
+.ai-success-pill  { font-size: 0.84rem; }
+.ai-input-mock span { font-size: 0.88rem; }
+
+/* ── Platform stack ─────────────────────────────────────────── */
+.ps-tag            { font-size: 0.80rem; color: var(--muted); }
+.ps-intel .ps-tag  { color: rgba(255,255,255,0.65); font-size: 0.80rem; }
+.ps-platform .ps-tag { color: rgba(255,255,255,0.65); }
+.ps-title          { font-size: 1.25rem; }
+.ps-chips span     { font-size: 0.84rem; color: var(--muted); }
+.ps-intel .ps-chips span   { color: rgba(255,255,255,0.85); }
+.ps-platform .ps-chips span { color: rgba(255,255,255,0.70); }
+.ps-connector span { font-size: 0.80rem; color: var(--muted); }
+.ps-builder-label  { font-size: 0.82rem; color: var(--muted); }
+.ps-builders-list span { font-size: 0.88rem; color: var(--muted); }
+.platform-belief   { font-size: 1.55rem; }
+
+/* ── Team teaser ─────────────────────────────────────────────── */
+.tm-info h4    { font-size: 1.00rem; }
+.tm-info p     { font-size: 0.86rem; }
+.tm-info small { font-size: 0.84rem; color: var(--muted); line-height: 1.6; }
+
+/* ── Investor CTA section (dark) ────────────────────────────── */
+.cta-section p           { color: rgba(255,255,255,0.72); font-size: 1.02rem; }
+.cta-raise-details strong{ font-size: 1.65rem; }
+.cta-raise-details span  { font-size: 0.86rem; color: rgba(255,255,255,0.65); }
+.cta-note   { font-size: 0.88rem; color: rgba(255,255,255,0.55); }
+.cta-email  { font-size: 0.92rem; color: rgba(255,255,255,0.68); }
+.cta-label  { font-size: 0.84rem; }
+
+/* ── Footer ─────────────────────────────────────────────────── */
+.footer-brand p      { font-size: 0.88rem; color: rgba(255,255,255,0.60); }
+.footer-nav a        { font-size: 0.88rem; color: rgba(255,255,255,0.65); }
+.footer-contact a    { font-size: 0.88rem; color: rgba(255,255,255,0.68); }
+.footer-contact span { font-size: 0.84rem; color: rgba(255,255,255,0.50); }
+
+/* ── Portfolio page ──────────────────────────────────────────── */
+.portfolio-status    { font-size: 0.80rem; }
+.portfolio-metric strong { font-size: 1.55rem; }
+.portfolio-metric span   { font-size: 0.84rem; color: var(--muted); }
+.portfolio-card h3   { font-size: 1.55rem; }
+.portfolio-card .p-desc { font-size: 0.96rem; color: var(--muted); }
+.combined-metric strong  { font-size: 2.1rem; }
+.combined-metric span    { font-size: 0.88rem; color: rgba(255,255,255,0.62); }
+
+/* ── Criteria grid ───────────────────────────────────────────── */
+.criteria-card h4  { font-size: 1.00rem; color: var(--ink); }
+.criteria-card p   { font-size: 0.92rem; color: var(--muted); line-height: 1.65; }
+
+/* ── Platform page ──────────────────────────────────────────── */
+.layer-label  { font-size: 0.80rem; color: var(--muted); }
+.layer-row.intel .layer-label    { color: rgba(255,255,255,0.72); }
+.layer-row.platform .layer-label { color: rgba(255,255,255,0.65); }
+.layer-title  { font-size: 1.45rem; }
+.layer-item   { font-size: 0.88rem; }
+
+/* ── Approach page ───────────────────────────────────────────── */
+.step-content p      { font-size: 0.98rem; color: var(--muted); max-width: 560px; margin-bottom: 20px; }
+.step-checklist li   { font-size: 0.94rem; color: var(--ink); }
+.playbook-outcome h4 { font-size: 0.96rem; color: var(--white); }
+.playbook-outcome p  { font-size: 0.90rem; color: rgba(255,255,255,0.68); }
+
+/* ── Team page ──────────────────────────────────────────────── */
+.tc-info h3   { font-size: 1.30rem; }
+.tc-info .tc-role { font-size: 0.88rem; }
+.tc-bio       { font-size: 0.94rem; color: var(--muted); line-height: 1.70; }
+.tc-points li { font-size: 0.90rem; color: var(--ink); line-height: 1.65; }
+
+/* ── Ask Nexpla panel ────────────────────────────────────────── */
+.ask-panel-brand b     { font-size: 0.96rem; }
+.ask-panel-brand small { font-size: 0.78rem; color: var(--muted); }
+.ask-msg               { font-size: 0.90rem; line-height: 1.60; }
+.ask-suggest           { font-size: 0.80rem; }
+.ask-input-row input   { font-size: 0.90rem; }
+
+/* ── Demo window text ────────────────────────────────────────── */
+.demo-title-label    { font-size: 0.76rem; color: rgba(255,255,255,0.55); }
+.demo-header b       { font-size: 0.90rem; }
+.demo-status         { font-size: 0.76rem; color: rgba(255,255,255,0.60); }
+.demo-msg-user       { font-size: 0.86rem; }
+.demo-msg-ai         { font-size: 0.86rem; color: rgba(255,255,255,0.88); }
+.demo-card-metric strong { font-size: 1.35rem; }
+.demo-card-metric small  { font-size: 0.76rem; color: rgba(255,255,255,0.65); }
+.demo-card-btns button   { font-size: 0.76rem; }
+.demo-success-pill   { font-size: 0.84rem; }
+.demo-input-text     { font-size: 0.86rem; color: rgba(255,255,255,0.78); }
+
+/* ── Modal ───────────────────────────────────────────────────── */
+.modal-box h2    { font-size: 1.80rem; }
+.modal-box p     { font-size: 0.96rem; color: var(--muted); }
+.modal-label     { font-size: 0.80rem; }
+.form-group label{ font-size: 0.90rem; font-weight: 500; color: var(--ink); }
+.form-group input,
+.form-group textarea { font-size: 0.94rem; }
+.modal-alt       { font-size: 0.88rem; }
+
+/* ── Page hero (interior pages) ─────────────────────────────── */
+.page-hero p     { font-size: 1.10rem; color: var(--muted); }
+.page-hero.dark p{ color: rgba(255,255,255,0.72); }
+
+/* ── Why Nexpla has an edge (inline styles override) ─────────── */
+.edge-card-title { font-size: 1.02rem !important; }
+.edge-card-body  { font-size: 0.92rem !important; color: var(--muted) !important; }
