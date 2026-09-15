@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Nexpla modernizes legacy pharma software businesses into AI-native platforms. India's $60B pharma market, rebuilt for intelligence." />
   <meta property="og:title" content="Nexpla — AI-Native Pharma Intelligence" />
-  <meta property="og:description" content="We modernize the software that runs Indian Pharma. 3,300+ customers. $100M+ data. Rebuilt on AI." />
+  <meta property="og:description" content="Rebuilding the software that runs Indian pharma distribution. First ERP partnership closed. Raising $500K." />
   <title>Nexpla — AI-Native Pharma Intelligence</title>
   <link rel="icon" href="assets/nexpla-icon.png" />
   <link rel="stylesheet" href="styles.css" />
@@ -44,12 +44,12 @@
     <!-- HERO -->
     <section class="hero" id="top">
       <div class="hero-inner">
-        <p class="hero-label">Intelligence for Pharma</p>
+        <p class="hero-label">India Pharma · AI-Native ERP</p>
         <h1 class="hero-headline">
-          The AI-native platform<br />modernizing the software<br />that runs Indian Pharma.
+          Rebuilding the software<br />that runs Indian pharma<br />distribution.
         </h1>
         <p class="hero-sub">
-          We partner with established pharma ERP businesses to rebuild them on modern, AI-native architecture — preserving decades of customer relationships, domain knowledge, and trust.
+          One software company — built on Foxpro in 1992 — holds 60%+ of India's pharma distribution ERP market. Their customers are actively looking for what comes next. We're building it, starting from inside.
         </p>
         <div class="hero-cta">
           <button class="btn-teal btn-lg" data-modal="investor">Talk to Ravi →</button>
@@ -57,45 +57,92 @@
         </div>
         <div class="hero-stats">
           <div class="stat">
-            <strong>~$60B</strong>
-            <span>Indian pharma market</span>
+            <strong>1 closed</strong>
+            <span>First ERP partnership — agreement reached, modernisation underway</span>
           </div>
           <div class="stat">
-            <strong>3,300+</strong>
-            <span>customers on starting platforms</span>
+            <strong>300+</strong>
+            <span>pharma customers on first partner platform</span>
           </div>
           <div class="stat">
-            <strong>$100M+</strong>
-            <span>transactional data acquired</span>
+            <strong>$30M+</strong>
+            <span>transactional data from first partnership</span>
           </div>
           <div class="stat">
             <strong>20+ yrs</strong>
-            <span>embedded domain context</span>
+            <span>embedded pharma domain context</span>
           </div>
         </div>
       </div>
 
-      <div class="hero-visual" aria-hidden="true">
-        <div class="hero-glow"></div>
-        <div class="hero-nodes">
-          <div class="node n1"><span>INVENTORY</span></div>
-          <div class="node n2"><span>ORDERS</span></div>
-          <div class="node n3"><span>COLLECTIONS</span></div>
-          <div class="node n4"><span>WORKFLOWS</span></div>
-          <div class="node n5"><span>CUSTOMERS</span></div>
-          <div class="node-core"><img src="assets/nexpla-icon.png" alt="" /></div>
+      <div class="hero-demo" aria-hidden="true">
+        <div class="demo-window">
+          <div class="demo-titlebar">
+            <div class="demo-dot red"></div>
+            <div class="demo-dot yellow"></div>
+            <div class="demo-dot green"></div>
+            <span class="demo-title-label">Nexpla AI · Pharma Intelligence</span>
+          </div>
+          <div class="demo-header">
+            <img src="assets/nexpla-icon.png" alt="" />
+            <b>Nexpla</b>
+            <div class="demo-status">
+              <div class="demo-live-dot"></div>
+              <span>Live</span>
+            </div>
+          </div>
+          <div class="demo-messages" id="demoMessages"></div>
+          <div class="demo-input-bar">
+            <span class="demo-input-text" id="demoInputText"></span><span class="demo-cursor-blink" id="demoCursor"></span>
+            <div class="demo-send" id="demoSend">↑</div>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- MARQUEE -->
+    <div class="marquee-strip" aria-hidden="true">
+      <div class="marquee-track" id="marqueeTrack">
+        <div class="marquee-item">Inventory Management</div>
+        <div class="marquee-item">Batch Tracking</div>
+        <div class="marquee-item">Expiry Alerts</div>
+        <div class="marquee-item">PO Generation</div>
+        <div class="marquee-item">Collection Reminders</div>
+        <div class="marquee-item">GST Compliance</div>
+        <div class="marquee-item">Route Billing</div>
+        <div class="marquee-item">Drug License Tracking</div>
+        <div class="marquee-item">Distributor Analytics</div>
+        <div class="marquee-item">Near-Expiry Management</div>
+        <div class="marquee-item">Van Sales</div>
+        <div class="marquee-item">Schedule-H Compliance</div>
+        <div class="marquee-item">Cash Flow Intelligence</div>
+        <div class="marquee-item">Demand Forecasting</div>
+        <!-- duplicate for seamless loop -->
+        <div class="marquee-item">Inventory Management</div>
+        <div class="marquee-item">Batch Tracking</div>
+        <div class="marquee-item">Expiry Alerts</div>
+        <div class="marquee-item">PO Generation</div>
+        <div class="marquee-item">Collection Reminders</div>
+        <div class="marquee-item">GST Compliance</div>
+        <div class="marquee-item">Route Billing</div>
+        <div class="marquee-item">Drug License Tracking</div>
+        <div class="marquee-item">Distributor Analytics</div>
+        <div class="marquee-item">Near-Expiry Management</div>
+        <div class="marquee-item">Van Sales</div>
+        <div class="marquee-item">Schedule-H Compliance</div>
+        <div class="marquee-item">Cash Flow Intelligence</div>
+        <div class="marquee-item">Demand Forecasting</div>
+      </div>
+    </div>
+
     <!-- WHY NOW -->
     <section class="why-now section-pad">
       <div class="container">
-        <div class="section-label">Why now</div>
-        <h2>AI changed the economics<br />of rebuilding software.</h2>
-        <p class="section-intro">For the first time in decades, rebuilding 30-year-old mission-critical software is economically viable. The first movers in each vertical will define what comes next.</p>
+        <div class="section-label reveal">Why now</div>
+        <h2 class="reveal delay-1">AI changed the economics<br />of rebuilding software.</h2>
+        <p class="section-intro reveal delay-2">For the first time in decades, rebuilding 30-year-old mission-critical software is economically viable. The first movers in each vertical will define what comes next.</p>
 
-        <div class="economics-compare">
+        <div class="economics-compare reveal delay-2">
           <div class="economics-before">
             <p class="compare-label">Before AI</p>
             <h3>Build from scratch</h3>
@@ -116,19 +163,19 @@
           </div>
         </div>
 
-        <div class="paradox-block">
+        <div class="paradox-block reveal delay-3">
           <div class="paradox-left">
             <p class="paradox-label">The paradox</p>
-            <p class="paradox-text">A <strong>$60B industry</strong> still runs critical operations on software built in 1992 — screen-driven, manual, fragmented, and entirely dependent on human operators. The largest pharma ERP in India (MARG) runs on Foxpro/DBF.</p>
+            <p class="paradox-text">MARG ERP — founded in 1992, running on Foxpro/DBF — holds an estimated <strong>60%+ market share</strong> among Indian pharma distributors. In 2026, their users are actively searching for alternatives. The category is ready to move. The question is who they move to.</p>
           </div>
           <div class="paradox-right">
             <div class="paradox-tags">
-              <span>Screen driven</span>
-              <span>Manual</span>
-              <span>Fragmented</span>
-              <span>Human dependent</span>
+              <span>Desktop only</span>
+              <span>Manual workflows</span>
+              <span>No cloud access</span>
+              <span>No AI</span>
             </div>
-            <p class="paradox-note">The industry has evolved. The software powering it hasn't. That gap is where Nexpla operates.</p>
+            <p class="paradox-note">This is not a shrinking market that got disrupted. It is a growing market waiting for a credible modern alternative. That is what we are building — from inside, with real customer context.</p>
           </div>
         </div>
       </div>
@@ -143,11 +190,11 @@
         <div class="insight-grid">
           <div class="insight-card">
             <h4>Customers</h4>
-            <p>3,300+ pharma businesses that already depend on this software and trust it with their operations.</p>
+            <p>300+ pharma businesses — distributors and retailers — who already run their operations on our first partner platform.</p>
           </div>
           <div class="insight-card">
             <h4>Data</h4>
-            <p>$100M+ in transactions and 20+ years of inventory movements, business patterns, and purchase history.</p>
+            <p>$30M+ in transactions and 20+ years of inventory movements, billing history, and pharma-specific business patterns.</p>
           </div>
           <div class="insight-card">
             <h4>Workflows</h4>
@@ -287,7 +334,7 @@
             <div class="tm-info">
               <h4>Ravi Chandra</h4>
               <p>Cofounder &amp; CEO</p>
-              <small>17+ yrs healthcare &amp; pharma · Deep supply chain &amp; operations experience</small>
+              <small>Built MedPay — 100K+ pharmacy network across India · 17+ yrs in pharma supply chain</small>
             </div>
           </div>
           <div class="team-member">
@@ -319,17 +366,41 @@
       </div>
     </section>
 
+    <!-- UNFAIR ADVANTAGE -->
+    <section class="section-pad" style="background:var(--white); border-top:1px solid var(--border);">
+      <div class="container">
+        <div class="section-label">Why Nexpla has an edge</div>
+        <h2>Three moats no new entrant can replicate.</h2>
+        <p class="section-intro">Knowing the market is one thing. Having operational roots inside it is another.</p>
+
+        <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:24px; margin-top:48px;">
+          <div style="padding:32px; background:var(--off-white); border-radius:var(--radius); border-left:3px solid var(--teal);">
+            <h4 style="margin-bottom:10px; font-size:1rem;">100K+ pharmacy network</h4>
+            <p style="font-size:0.88rem; color:var(--muted); line-height:1.65;">Ravi built MedPay — a pharma technology company with over 100,000 pharmacies across India. The end customers of every pharma ERP are already in that network. No cold outreach required.</p>
+          </div>
+          <div style="padding:32px; background:var(--off-white); border-radius:var(--radius); border-left:3px solid var(--teal);">
+            <h4 style="margin-bottom:10px; font-size:1rem;">ERP relationships already built</h4>
+            <p style="font-size:0.88rem; color:var(--muted); line-height:1.65;">Anamika has managed 100s of ERP partnerships across India. The owners of the ERPs we want to partner with already know her. She doesn't pitch cold — she continues conversations.</p>
+          </div>
+          <div style="padding:32px; background:var(--off-white); border-radius:var(--radius); border-left:3px solid var(--teal);">
+            <h4 style="margin-bottom:10px; font-size:1rem;">Built for this specific niche</h4>
+            <p style="font-size:0.88rem; color:var(--muted); line-height:1.65;">India pharma distribution is not a tangent for us. It's the only thing we're doing. Every decision — which ERPs to partner with, what to rebuild first, which workflows matter — comes from years inside this exact market.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- INVESTOR CTA -->
     <section class="cta-section section-pad">
       <div class="container cta-inner">
         <div class="cta-copy">
           <p class="cta-label">We are raising USD 500K</p>
           <h2>Fund the first transformation.</h2>
-          <p>We're partnering with two pharma ERPs — 3,300+ customers, $100M+ in transactional data, 20+ years of embedded domain knowledge — and rebuilding them as AI-native platforms. This is the starting capital for a repeatable playbook.</p>
+          <p>First partnership is closed — 300+ pharma customers, $30M+ in transaction data, modernisation underway. We have identified 6+ more ERPs in pipeline. Raising to close the next two and fund the rebuild.</p>
           <div class="cta-raise-details">
-            <div><strong>$300K+</strong><span>Total partnership cost</span></div>
+            <div><strong>$500K</strong><span>Total raise</span></div>
             <div><strong>12–18 mo</strong><span>Transformation runway</span></div>
-            <div><strong>Repeatable</strong><span>One playbook, built to scale</span></div>
+            <div><strong>6+ ERPs</strong><span>Identified in pipeline</span></div>
           </div>
         </div>
         <div class="cta-actions">
