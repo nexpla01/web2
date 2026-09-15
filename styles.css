@@ -1806,3 +1806,29 @@ p  { line-height: 1.65; }
 /* ── Why Nexpla has an edge (inline styles override) ─────────── */
 .edge-card-title { font-size: 1.02rem !important; }
 .edge-card-body  { font-size: 0.92rem !important; color: var(--muted) !important; }
+
+/* ============================================================
+   PLATFORM STACK CHIP FIX
+   ps-intel and ps-platform have LIGHT backgrounds on index.html
+   — the contrast fix incorrectly applied white text to them.
+   ============================================================ */
+
+/* AI Core layer — teal-pale background, chips are white with teal text */
+.ps-layer.ps-intel .ps-tag           { color: var(--teal);  font-size: 0.80rem; }
+.ps-layer.ps-intel .ps-title         { color: var(--ink);   }
+.ps-layer.ps-intel .ps-chips span    { background: var(--white); border-color: rgba(16,104,96,0.25); color: var(--teal); font-size: 0.86rem; font-weight: 500; }
+
+/* Platform layer — white background, chips are light grey with muted text */
+.ps-layer.ps-platform .ps-tag        { color: var(--muted); font-size: 0.80rem; }
+.ps-layer.ps-platform .ps-title      { color: var(--ink);   }
+.ps-layer.ps-platform .ps-chips span { background: var(--off-white); border-color: var(--border); color: var(--ink); font-size: 0.86rem; font-weight: 500; }
+
+/* ERP layer — off-white background, chips already correct */
+.ps-layer.ps-erp .ps-chips span      { background: var(--white); border-color: var(--border); color: var(--muted); font-size: 0.86rem; }
+.ps-layer.ps-erp .ps-tag             { color: var(--muted); font-size: 0.80rem; }
+.ps-layer.ps-erp .ps-title           { color: var(--ink);   }
+
+/* platform.html full-stack — those DO have dark/coloured backgrounds, keep white text */
+.layer-row.intel .layer-item  { background: rgba(255,255,255,0.18); color: var(--white); font-size: 0.90rem; }
+.layer-row.platform .layer-item { background: rgba(255,255,255,0.12); color: rgba(255,255,255,0.85); font-size: 0.90rem; }
+.layer-row.erp .layer-item    { background: var(--white); border: 1px solid var(--border); color: var(--ink); font-size: 0.90rem; }
