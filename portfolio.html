@@ -13,6 +13,7 @@
   <header class="nav nav-light" id="nav">
     <a href="/" class="nav-logo"><img src="assets/nexpla-logo-transparent.png" alt="Nexpla" /></a>
     <nav class="nav-links" aria-label="Primary">
+      <a href="index.html">Home</a>
       <a href="approach.html">Approach</a>
       <a href="portfolio.html" style="color:var(--teal)">Portfolio</a>
       <a href="platform.html">Platform</a>
@@ -22,127 +23,233 @@
       <button class="btn-ghost" data-modal="partner">For ERP Owners</button>
       <button class="btn-teal" data-modal="investor">Investor Enquiry</button>
     </div>
-    <button class="nav-mobile-toggle" id="navToggle" aria-label="Open menu"><span></span><span></span></button>
+    <button class="nav-mobile-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
   </header>
 
   <div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Home</a>
     <a href="approach.html">Approach</a>
     <a href="portfolio.html">Portfolio</a>
     <a href="platform.html">Platform</a>
     <a href="team.html">Team</a>
     <button data-modal="investor" class="btn-teal">Investor Enquiry</button>
+    <button data-modal="partner">For ERP Owners</button>
   </div>
 
-  <main>
-    <section class="page-hero">
-      <div class="container">
-        <div class="section-label">Portfolio &amp; pipeline</div>
-        <h1>First deal closed.<br />Pipeline active.</h1>
-        <p>We don't pitch a vision without proof. Our first ERP partnership is closed, agreement signed, and modernisation underway. 300+ customers. $30M+ in transaction history. 20+ years of pharma-specific workflows. That's what we're rebuilding on top of. Partner names stay confidential — pharma is a closed industry and ERP owners prefer it that way.</p>
-      </div>
-    </section>
-
-    <section class="section-pad">
-      <div class="container">
-        <div class="portfolio-grid">
-          <div class="portfolio-card active">
-            <div class="portfolio-status agreed"><span class="dot"></span> Agreement reached · Modernisation underway</div>
-            <h3>ERP Partner #1</h3>
-            <p class="p-desc">An established pharma distribution ERP serving distributors and retailers across a regional market. Deep billing, inventory, and collection workflows built over 20+ years. First modernisation sprint in progress.</p>
-            <div class="portfolio-metrics">
-              <div class="portfolio-metric"><strong>300+</strong><span>Customers (150+ distributors, 150+ retailers)</span></div>
-              <div class="portfolio-metric"><strong>$30M+</strong><span>Transactional data</span></div>
-              <div class="portfolio-metric"><strong>20+ yrs</strong><span>In market</span></div>
-            </div>
-          </div>
-
-          <div class="portfolio-card pipeline">
-            <div class="portfolio-status shortlisted"><span class="dot"></span> In pipeline</div>
-            <h3>ERP Partner #2+</h3>
-            <p class="p-desc">We have identified 6+ additional pharma ERP businesses in active conversations. We are raising to close the next two partnerships and fund the transformation runway across both.</p>
-            <div class="portfolio-metrics">
-              <div class="portfolio-metric"><strong>6+</strong><span>ERPs identified</span></div>
-              <div class="portfolio-metric"><strong>Active</strong><span>Conversations ongoing</span></div>
-              <div class="portfolio-metric"><strong>2 targets</strong><span>To close with this raise</span></div>
-            </div>
+  <main class="portfolio-page">
+    <section class="portfolio-ai-hero">
+      <div class="portfolio-neural-grid" aria-hidden="true"></div>
+      <div class="container portfolio-hero-inner">
+        <div class="portfolio-hero-copy">
+          <div class="section-label">Portfolio intelligence</div>
+          <h1><span class="portfolio-title-line">We Partner With</span> <span class="portfolio-title-line">the Platforms</span> <span class="portfolio-title-line">that Hold the Context.</span></h1>
+          <p>ERP #1 agreement is signed and closing is in progress. We have shortlisted ERP #2 and started conversations around a 3,000+ customer platform with 20+ years of history.</p>
+          <div class="portfolio-hero-actions">
+            <button class="btn-teal" data-modal="investor">Review the raise</button>
+            <button class="btn-outline-teal" data-modal="partner">Partner confidentially</button>
           </div>
         </div>
 
-        <div class="portfolio-combined">
+        <div class="ai-command-panel" aria-label="Portfolio command center preview">
+          <div class="ai-panel-top">
+            <div>
+              <span class="ai-kicker">Nexpla portfolio OS</span>
+              <strong>Transformation cockpit</strong>
+            </div>
+            <span class="ai-live-dot">Live</span>
+          </div>
+          <div class="ai-query-row">
+            <span>Ask</span>
+            <p>What we partner with</p>
+          </div>
+          <div class="ai-answer-card">
+            <div class="ai-answer-head">
+              <span>CUSTOMERS</span>
+              <strong>Partner #1 validated</strong>
+            </div>
+            <div class="ai-progress">
+              <span style="width:76%"></span>
+            </div>
+            <div class="ai-answer-grid">
+              <div><strong>300+</strong><span>300+</span></div>
+              <div><strong>$30M+</strong><span>20+ years</span></div>
+              <div><strong>20+ yrs</strong><span>300+ modules</span></div>
+            </div>
+          </div>
+          <div class="ai-task-list">
+            <div><span></span> Normalize billing, inventory, collection schemas</div>
+            <div><span></span> Map high-frequency pharma workflows</div>
+            <div><span></span> Prioritize next two strategic partnerships</div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="portfolio-signal-strip">
+          <div><strong>Signed</strong><span>ERP #1 · closing in progress</span></div>
+          <div><strong>Live</strong><span>Paid AI workflow pilots running</span></div>
+          <div><strong>$500K</strong><span>Funds the next two partnerships + transformation</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio-operating-system">
+      <div class="container">
+        <div class="portfolio-section-head">
           <div>
-            <div class="section-label light">Where we are today</div>
-            <h2>One deal closed. The playbook proven. Raising to repeat it.</h2>
-            <p>The first partnership validates the model — we can source deals in this closed industry, close them, and begin the modernisation. The raise funds closing two more and running the rebuild across all three simultaneously.</p>
+            <div class="section-label">Strategic partnerships</div>
+            <h2>From trusted platforms to AI-native operations.</h2>
           </div>
-          <div class="combined-metrics">
-            <div class="combined-metric"><strong>300+</strong><span>Customers on live platform</span></div>
-            <div class="combined-metric"><strong>$30M+</strong><span>Transaction data acquired</span></div>
-            <div class="combined-metric"><strong>6+</strong><span>ERPs in pipeline</span></div>
-            <div class="combined-metric"><strong>$500K</strong><span>Raise to close next two</span></div>
-          </div>
+          <p>We partner around more than software: customers, data, workflows, domain knowledge and trust. The objective is to preserve that context while modernizing the product.</p>
+        </div>
+
+        <div class="portfolio-grid">
+          <article class="portfolio-card active">
+            <div class="portfolio-status agreed"><span class="dot"></span> Agreement signed</div>
+            <div class="portfolio-card-head">
+              <h3>ERP #1</h3>
+              <span>Modernization sprint</span>
+            </div>
+            <p class="p-desc">Agreement signed · closing in progress · 300+ installed customers · 20+ years of transactions · 300+ modules.</p>
+            <div class="portfolio-ai-steps">
+              <div class="done">Agreement signed</div>
+              <div class="active">Workflow extraction</div>
+              <div>AI rebuild</div>
+            </div>
+            <div class="portfolio-metrics">
+              <div class="portfolio-metric"><strong>300+</strong><span>Installed base</span></div>
+              <div class="portfolio-metric"><strong>$30M+</strong><span>Annual transactions</span></div>
+              <div class="portfolio-metric"><strong>20+ yrs</strong><span>Transaction history</span></div>
+            </div>
+          </article>
+
+          <article class="portfolio-card pipeline">
+            <div class="portfolio-status shortlisted"><span class="dot"></span> Sourced pipeline</div>
+            <div class="portfolio-card-head">
+              <h3>ERP #2 + pipeline</h3>
+              <span>Target selection</span>
+            </div>
+            <p class="p-desc">ERP #2 is shortlisted and conversations have started. The wider pipeline is being built for repeat strategic partnerships.</p>
+            <div class="pipeline-orbit" aria-hidden="true">
+              <span class="core">Nexpla</span>
+              <span class="node n1">ERP A</span>
+              <span class="node n2">ERP B</span>
+              <span class="node n3">ERP C</span>
+              <span class="node n4">ERP D</span>
+            </div>
+            <div class="portfolio-metrics">
+              <div class="portfolio-metric"><strong>3,000+</strong><span>ERP #2 customers</span></div>
+              <div class="portfolio-metric"><strong>Active</strong><span>Started</span></div>
+              <div class="portfolio-metric"><strong>2</strong><span>Next closes funded</span></div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="what-we-look-for">
+    <section class="portfolio-thesis">
+      <div class="container thesis-shell">
+        <div>
+          <div class="section-label light">Where we are today</div>
+          <h2>Partner. Modernize. Layer. Scale.</h2>
+          <p>The first ERP partnership is secured. The next step is to expand the network and apply the same transformation playbook across additional installed bases.</p>
+        </div>
+        <div class="thesis-matrix">
+          <div><span>Data moat</span><strong>Longitudinal transactions</strong></div>
+          <div><span>Workflow moat</span><strong>Pharma-specific logic</strong></div>
+          <div><span>Distribution moat</span><strong>Customers already live</strong></div>
+          <div><span>AI unlock</span><strong>Agents on trusted rails</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="what-we-look-for" id="partner-selection">
       <div class="container">
-        <div class="section-label">What we look for</div>
-        <h2>What makes an ERP<br />the right partnership candidate.</h2>
-        <p class="section-intro">We're selective. The context accumulated around the software matters more than the software itself.</p>
+        <div class="portfolio-section-head">
+          <div>
+            <div class="section-label">Partner selection model</div>
+            <h2>What makes an ERP a strong modernization partner.</h2>
+          </div>
+          <p>We are selective because the strongest AI product is built on years of operational memory, not a blank SaaS shell. The right partner brings trust, data, and domain specificity.</p>
+        </div>
         <div class="criteria-grid">
           <div class="criteria-card">
+            <span class="criteria-icon">01</span>
             <h4>Customers who depend on it</h4>
-            <p>We look for sticky, long-tenure customer relationships. If customers have stayed for 10+ years, they're not leaving for a new entrant — but they will upgrade for a better product they already trust.</p>
+            <p>Existing customers and proven revenue create a base to upgrade.</p>
           </div>
           <div class="criteria-card">
+            <span class="criteria-icon">02</span>
             <h4>Rich, longitudinal data</h4>
-            <p>The more years of transaction history, the better the AI intelligence we can build. We prefer ERPs with 15+ years of structured data across inventory, billing, and distribution.</p>
+            <p>20+ years of transaction history become the context for intelligence.</p>
           </div>
           <div class="criteria-card">
+            <span class="criteria-icon">03</span>
             <h4>Profitable, not broken</h4>
-            <p>We are not turnaround investors. We look for businesses with proven recurring revenue — ideally AMC or subscription-based — where the fundamentals are sound and the problem is the technology.</p>
+            <p>Profitable, durable businesses with a clear technology ceiling are the target.</p>
           </div>
           <div class="criteria-card">
+            <span class="criteria-icon">04</span>
             <h4>Deep pharma workflow specificity</h4>
-            <p>Generic ERPs won't do. We want platforms built specifically for pharma — with expiry management, schedule-H compliance, distribution-level billing, and the other nuances that generalist software gets wrong.</p>
+            <p>Pharma-specific workflows and domain knowledge matter more than generic ERP breadth.</p>
           </div>
           <div class="criteria-card">
-            <h4>Founder or family-owned</h4>
-            <p>These businesses were built by people who understand pharma. That domain knowledge is embedded in the software. We want to partner with those operators, not strip mine what they built.</p>
+            <span class="criteria-icon">05</span>
+            <h4>Deeply embedded operator</h4>
+            <p>We work with the embedded team to convert domain knowledge into an AI-native product.</p>
           </div>
           <div class="criteria-card">
-            <h4>Ready for the next chapter</h4>
-            <p>Succession, fatigue with competing on old software, or a genuine desire to see their product modernized. We work best with owners who want to see their platform become what it could have been.</p>
+            <span class="criteria-icon">06</span>
+            <h4>Ready for modernization</h4>
+            <p>We work confidentially with ERP owners where a strategic partnership can create the clearest path to modernization.</p>
           </div>
         </div>
 
-        <div style="margin-top:48px; display:flex; gap:16px; flex-wrap:wrap;">
-          <button class="btn-teal" data-modal="investor">Talk to Ravi →</button>
-          <button class="btn-outline-teal" data-modal="partner">We operate a pharma ERP →</button>
+        <div class="portfolio-cta-row">
+          <button class="btn-teal" data-modal="investor">Talk to Ravi</button>
+          <button class="btn-outline-teal" data-modal="partner">We operate a pharma ERP</button>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container footer-inner">
-      <div class="footer-brand"><img src="assets/nexpla-logo-transparent.png" alt="Nexpla" /><p>Building the intelligence layer for Pharma.</p></div>
-      <nav class="footer-nav"><a href="approach.html">Approach</a><a href="portfolio.html">Portfolio</a><a href="platform.html">Platform</a><a href="team.html">Team</a></nav>
-      <div class="footer-contact"><a href="mailto:rc@nexpla.com">rc@nexpla.com</a><span>© <span id="year"></span> Nexpla</span></div>
+    <div class="container">
+      <div class="footer-shell">
+        <div class="footer-brand">
+          <img src="assets/nexpla-logo-transparent.png" alt="Nexpla" />
+          <p>Building the intelligence layer for Indian pharma distribution.</p>
+          <div class="footer-status"><span></span>AI-native ERP rebuild underway</div>
+        </div>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="approach.html">Approach</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="platform.html">Platform</a>
+          <a href="team.html">Team</a>
+        </nav>
+        <div class="footer-contact">
+          <span>Investor access</span>
+          <a href="mailto:rc@nexpla.com">rc@nexpla.com</a>
+          <small>Ravi responds personally</small>
+        </div>
+        <div class="footer-bottom">
+          <span>© <span id="year"></span> Nexpla</span>
+          <div><span>Pharma ERP</span><span>AI agents</span><span>Workflow intelligence</span></div>
+        </div>
+      </div>
     </div>
   </footer>
 
   <button class="ask-fab" id="askFab"><img src="assets/nexpla-icon.png" alt="" /><span>Ask Nexpla</span></button>
-  <div class="ask-panel" id="askPanel" aria-hidden="true">
+  <div class="ask-panel" id="askPanel" aria-hidden="true" role="dialog" aria-label="Ask Nexpla assistant">
     <div class="ask-panel-header">
-      <div class="ask-panel-brand"><img src="assets/nexpla-icon.png" alt="" /><div><b>Ask Nexpla</b><small>AI · Grounded in our deck</small></div></div>
-      <button class="ask-close" id="askClose" aria-label="Close">×</button>
+      <div class="ask-panel-brand"><img src="assets/nexpla-icon.png" alt="" /><div><b>Ask Nexpla</b><small>AI · Grounded in our deck <span class="ask-live"><i></i>Live</span></small></div></div>
+      <button class="ask-close" id="askClose" aria-label="Close Ask Nexpla">×</button>
     </div>
     <div class="ask-messages" id="askMessages"><div class="ask-msg assistant">What would you like to know about our portfolio?</div></div>
     <div class="ask-suggestions" id="askSuggestions">
       <button class="ask-suggest">Why keep partner names private?</button>
-      <button class="ask-suggest">What's the deal structure?</button>
-      <button class="ask-suggest">How much of the raise goes to acquisitions?</button>
+      <button class="ask-suggest">What does a strategic partnership look like?</button>
+      <button class="ask-suggest">How is the raise used to expand strategic partnerships?</button>
     </div>
     <div class="ask-input-row">
       <input type="text" id="askInput" placeholder="Ask anything about Nexpla..." autocomplete="off" />
@@ -150,9 +257,9 @@
     </div>
   </div>
 
-  <div class="modal-overlay" id="investorModal" aria-hidden="true">
+  <div class="modal-overlay" id="investorModal" aria-hidden="true" role="dialog" aria-label="Investor enquiry">
     <div class="modal-box">
-      <button class="modal-close" data-close="investorModal">×</button>
+      <button class="modal-close" data-close="investorModal" aria-label="Close popup">×</button>
       <div class="modal-label">Investor enquiry</div>
       <h2>Let's talk about Nexpla.</h2>
       <p>Raising USD 500K for the first transformation. Ravi responds personally.</p>
@@ -168,9 +275,9 @@
     </div>
   </div>
 
-  <div class="modal-overlay" id="partnerModal" aria-hidden="true">
+  <div class="modal-overlay" id="partnerModal" aria-hidden="true" role="dialog" aria-label="For ERP owners">
     <div class="modal-box">
-      <button class="modal-close" data-close="partnerModal">×</button>
+      <button class="modal-close" data-close="partnerModal" aria-label="Close popup">×</button>
       <div class="modal-label">For ERP owners</div>
       <h2>Your software's next chapter.</h2>
       <p>We work with established pharma ERP businesses. Everything stays confidential.</p>

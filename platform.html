@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Platform — Nexpla</title>
-  <meta name="description" content="Nexpla's three-layer intelligence platform for pharma ERP. AI-Native ERP · Intelligent Layer · Platform APIs." />
+  <meta name="description" content="Nexpla OS: ERP system of record + intelligence, agents, APIs, commerce and fintech." />
   <link rel="icon" href="assets/nexpla-icon.png" />
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -13,137 +13,166 @@
   <header class="nav nav-light" id="nav">
     <a href="/" class="nav-logo"><img src="assets/nexpla-logo-transparent.png" alt="Nexpla" /></a>
     <nav class="nav-links" aria-label="Primary">
+      <a href="index.html">Home</a>
       <a href="approach.html">Approach</a>
       <a href="portfolio.html">Portfolio</a>
-      <a href="platform.html" style="color:var(--teal)">Platform</a>
+      <a href="platform.html" class="active">Platform</a>
       <a href="team.html">Team</a>
     </nav>
     <div class="nav-actions">
       <button class="btn-ghost" data-modal="partner">For ERP Owners</button>
       <button class="btn-teal" data-modal="investor">Investor Enquiry</button>
     </div>
-    <button class="nav-mobile-toggle" id="navToggle" aria-label="Open menu"><span></span><span></span></button>
+    <button class="nav-mobile-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
   </header>
 
   <div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Home</a>
     <a href="approach.html">Approach</a>
     <a href="portfolio.html">Portfolio</a>
     <a href="platform.html">Platform</a>
     <a href="team.html">Team</a>
     <button data-modal="investor" class="btn-teal">Investor Enquiry</button>
+    <button data-modal="partner">For ERP Owners</button>
   </div>
 
-  <main>
-    <section class="page-hero">
-      <div class="container">
-        <div class="section-label">The platform</div>
-        <h1>From system of record<br />to system of intelligence.</h1>
-        <p>We don't replace the ERP. We build an intelligent layer on top of it — turning decades of pharma data, workflows, and business logic into infrastructure that others can build on. The ERP becomes the foundation. The intelligence layer is what makes it powerful.</p>
-      </div>
-    </section>
-
-    <section class="section-pad">
-      <div class="container">
-        <div class="platform-full-stack">
-          <div class="layer-row erp">
-            <div>
-              <div class="layer-label">Layer 1 — Foundation</div>
-              <div class="layer-title">AI-Native ERP</div>
-            </div>
-            <div>
-              <div class="layer-items">
-                <span class="layer-item">Inventory &amp; batches</span>
-                <span class="layer-item">Sales &amp; billing</span>
-                <span class="layer-item">Purchase &amp; procurement</span>
-                <span class="layer-item">Distribution &amp; logistics</span>
-                <span class="layer-item">Finance &amp; accounts</span>
-                <span class="layer-item">Compliance</span>
-                <span class="layer-item">300+ modules</span>
-                <span class="layer-item">20+ yrs transaction history</span>
-              </div>
-            </div>
+  <main class="platform-page-main">
+    <section class="platform-ai-hero platform-command-hero">
+      <div class="container platform-ai-hero-grid">
+        <div class="platform-ai-copy reveal">
+          <div class="section-label">The platform</div>
+          <h1>Partner with the ERP. Build the operating layer.</h1>
+          <p>Partnership turns the ERP from software into an extensible operating platform. Nexpla OS adds intelligence, agents and APIs while preserving the ERP · system of record.</p>
+          <div class="platform-command-points" aria-label="Platform capabilities">
+            <span>Nexpla OS</span>
+            <span>Intelligence</span>
+            <span>APIs</span>
           </div>
-
-          <div class="layer-row intel">
-            <div>
-              <div class="layer-label">Layer 2 — AI Core</div>
-              <div class="layer-title">Intelligent Layer</div>
-            </div>
-            <div>
-              <div class="layer-items">
-                <span class="layer-item">Natural language interface</span>
-                <span class="layer-item">Understand context</span>
-                <span class="layer-item">Intelligent recommendations</span>
-                <span class="layer-item">Decide from data</span>
-                <span class="layer-item">Agentic execution</span>
-                <span class="layer-item">Voice commands</span>
-                <span class="layer-item">Proactive alerts</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="layer-row platform">
-            <div>
-              <div class="layer-label">Layer 3 — Ecosystem</div>
-              <div class="layer-title">Platform</div>
-            </div>
-            <div>
-              <div class="layer-items">
-                <span class="layer-item">APIs</span>
-                <span class="layer-item">AI Agents</span>
-                <span class="layer-item">Webhooks</span>
-                <span class="layer-item">Partner integrations</span>
-                <span class="layer-item">Fintech connectors</span>
-                <span class="layer-item">Compliance reporting</span>
-              </div>
-            </div>
+          <div class="platform-ai-stats">
+            <div><strong>ERP</strong><span>system of record</span></div>
+            <div><strong>AI</strong><span>Agents · intelligence</span></div>
+            <div><strong>API</strong><span>Commerce · fintech · open platform</span></div>
           </div>
         </div>
 
-        <div style="background:var(--off-white); border:1px solid var(--border); border-radius:var(--radius-lg); padding:40px; margin-top:40px;">
-          <div class="section-label">Others build on it</div>
-          <p style="color:var(--muted); margin-bottom:24px; max-width:560px;">The platform layer opens the ERP's intelligence to the broader pharma ecosystem. Businesses, fintech partners, developers, and AI agents can all build on top of it.</p>
-          <div style="display:flex; flex-wrap:wrap; gap:12px;">
-            <span style="padding:10px 18px; border:1.5px dashed var(--border); border-radius:var(--radius); font-size:0.88rem; color:var(--muted); font-weight:500;">Pharma businesses</span>
-            <span style="padding:10px 18px; border:1.5px dashed var(--border); border-radius:var(--radius); font-size:0.88rem; color:var(--muted); font-weight:500;">Ecosystem partners</span>
-            <span style="padding:10px 18px; border:1.5px dashed var(--border); border-radius:var(--radius); font-size:0.88rem; color:var(--muted); font-weight:500;">Fintech</span>
-            <span style="padding:10px 18px; border:1.5px dashed var(--border); border-radius:var(--radius); font-size:0.88rem; color:var(--muted); font-weight:500;">Developers &amp; ISVs</span>
-            <span style="padding:10px 18px; border:1.5px dashed var(--border); border-radius:var(--radius); font-size:0.88rem; color:var(--muted); font-weight:500;">AI Agents</span>
+        <div class="platform-orchestration reveal delay-1" aria-label="Nexpla platform intelligence graph">
+          <div class="platform-orbit-rings" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
+          <div class="platform-orbit-core">
+            <img src="assets/nexpla-icon.png" alt="" />
+            <strong>Nexpla</strong>
+            <small>Intelligence layer</small>
+          </div>
+          <div class="platform-orbit-node node-foundation"><span>ERP</span><p>System of record</p></div>
+          <div class="platform-orbit-node node-ai"><span>AI</span><p>Context engine</p></div>
+          <div class="platform-orbit-node node-actions"><span>Ops</span><p>Workflow actions</p></div>
+          <div class="platform-orbit-node node-api"><span>API</span><p>Partner surface</p></div>
         </div>
       </div>
     </section>
 
-    <section class="section-pad" style="background:var(--ink);">
+    <section class="platform-architecture-section section-pad" id="architecture">
       <div class="container">
-        <div class="section-label light">The transformation</div>
-        <h2 style="color:var(--white); max-width:580px; margin-bottom:40px;">What it actually looks like<br />when a pharma business uses Nexpla.</h2>
+        <div class="platform-architecture-v2 reveal">
+          <div class="architecture-copy-row">
+            <div>
+              <div class="section-label">Architecture</div>
+              <h2>The ERP stays. The operating layer compounds above it.</h2>
+            </div>
+            <p>The stack combines the ERP system of record with Nexpla OS, then exposes commerce, fintech, APIs and agents to the installed base.</p>
+          </div>
 
-        <div style="display:grid; grid-template-columns:1fr 1fr; gap:32px; align-items:start;">
-          <div>
-            <p style="font-size:0.78rem; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; color:rgba(255,255,255,0.65); font-size:0.82rem; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; margin-bottom:20px;">Before — Legacy ERP</p>
-            <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:var(--radius); padding:24px; display:flex; flex-direction:column; gap:12px;">
-              <div style="display:flex; align-items:center; gap:10px; color:rgba(255,255,255,0.68); font-size:0.92rem;"><span>→</span><span>Open the software</span></div>
-              <div style="display:flex; align-items:center; gap:10px; color:rgba(255,255,255,0.68); font-size:0.92rem;"><span>→</span><span>Navigate to the right module</span></div>
-              <div style="display:flex; align-items:center; gap:10px; color:rgba(255,255,255,0.68); font-size:0.92rem;"><span>→</span><span>Click through to Sales → Invoices</span></div>
-              <div style="display:flex; align-items:center; gap:10px; color:rgba(255,255,255,0.68); font-size:0.92rem;"><span>→</span><span>Filter by date, by party, by status</span></div>
-              <div style="display:flex; align-items:center; gap:10px; color:rgba(255,255,255,0.68); font-size:0.92rem;"><span>→</span><span>Export to Excel</span></div>
-              <div style="display:flex; align-items:center; gap:10px; color:rgba(255,255,255,0.68); font-size:0.92rem;"><span>→</span><span>Call distributors manually</span></div>
-              <div style="border-top:1px solid rgba(255,255,255,0.08); padding-top:12px; font-size:0.90rem; color:rgba(255,255,255,0.55);">20 minutes. One task. Repeated daily.</div>
+          <div class="architecture-stack-grid">
+            <aside class="architecture-control-panel reveal delay-1">
+              <span>Runtime Map</span>
+              <h3>The operating stack</h3>
+              <div class="architecture-signal" aria-hidden="true">
+                <i></i><i></i><i></i>
+              </div>
+              <div class="architecture-metrics">
+                <div><strong>300+</strong><small>modules</small></div>
+                <div><strong>20+ yrs</strong><small>transaction context</small></div>
+                <div><strong>API</strong><small>partner-ready surface</small></div>
+              </div>
+            </aside>
+
+            <div class="architecture-layers reveal delay-2">
+              <article class="architecture-layer">
+                <span>01</span>
+                <div>
+                  <small>Foundation</small>
+                  <h3>System of record</h3>
+                  <p>ERP · system of record — customers, workflows and transactions.</p>
+                </div>
+                <strong>ERP data</strong>
+              </article>
+
+              <article class="architecture-layer is-active">
+                <span>02</span>
+                <div>
+                  <small>AI core</small>
+                  <h3>Context engine</h3>
+                  <p>Nexpla OS — intelligence, agents and APIs.</p>
+                </div>
+                <strong>Agent reasoning</strong>
+              </article>
+
+              <article class="architecture-layer">
+                <span>03</span>
+                <div>
+                  <small>Ecosystem</small>
+                  <h3>Platform surface</h3>
+                  <p>Commerce · fintech · open platform — published once across the installed base.</p>
+                </div>
+                <strong>Build on top</strong>
+              </article>
             </div>
           </div>
 
-          <div>
-            <p style="font-size:0.78rem; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; color:var(--teal-bright); margin-bottom:20px;">After — Nexpla Intelligence</p>
-            <div class="ai-mock" style="background:var(--white); border-radius:var(--radius);">
+          <div class="platform-builders architecture-builders reveal delay-2">
+            <span>Opened to</span>
+            <strong>Pharma businesses</strong>
+            <strong>Ecosystem partners</strong>
+            <strong>Fintech</strong>
+            <strong>Developers &amp; ISVs</strong>
+            <strong>AI agents</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="platform-demo-section section-pad">
+      <div class="container">
+        <div class="platform-demo-head reveal">
+          <div class="section-label light">The transformation</div>
+          <h2>From clicks and exports to commands and actions.</h2>
+        </div>
+        <div class="platform-demo-grid">
+          <div class="platform-before-panel reveal delay-1">
+            <span>Before — Legacy ERP</span>
+            <ul>
+              <li>Navigate</li>
+              <li>Click</li>
+              <li>Search</li>
+              <li>Wait</li>
+            </ul>
+            <strong>Screen-driven workflows.</strong>
+          </div>
+
+          <div class="platform-after-panel reveal delay-2">
+            <span>After — AI-Native ERP</span>
+            <div class="ai-mock platform-ai-mock">
               <div class="ai-mock-header">
                 <img src="assets/nexpla-icon.png" alt="" />
                 <b>Nexpla</b>
                 <span class="live-dot"></span>
               </div>
               <div class="ai-mock-body">
-                <div class="ai-greeting">Good morning, Anita 👋<small>How can I help you today?</small></div>
-                <div class="ai-user-msg">Show me today's outstanding from my top 20 distributors.</div>
+                <div class="ai-greeting">Good morning, Anita<small>How can I help you today?</small></div>
+                <div class="ai-user-msg">Show today's outstanding from my top 20 distributors.</div>
                 <div class="ai-response-card">
                   <div class="arc-row">
                     <div><strong>₹18.4L</strong><small>Total Outstanding</small></div>
@@ -156,74 +185,76 @@
               </div>
               <div class="ai-input-mock"><span>Ask anything or give a command...</span><button>↑</button></div>
             </div>
-            <p style="font-size:0.84rem; color:rgba(255,255,255,0.65); font-size:0.92rem; margin-top:14px;">30 seconds. Same information. Action taken.</p>
+            <strong>Ask. Get answers. Take action.</strong>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section-pad">
+    <section class="platform-workflows-section section-pad">
       <div class="container">
-        <div class="section-label">Pharma workflows</div>
-        <h2>Built for the workflows<br />that actually run pharma.</h2>
-        <p class="section-intro">Not a generic AI assistant. Intelligence that knows what expiry management means. What schedule-H compliance requires. What a pharma distributor's cash flow looks like.</p>
+        <div class="workflow-command-layout">
+          <div class="workflow-index reveal">
+            <div class="section-label">Pharma workflows</div>
+            <h2>Built for the work pharma teams repeat every day.</h2>
+            <p>AI-native workflows are grounded in the pharma processes already encoded in the ERP.</p>
+          </div>
 
-        <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-top:48px;">
-          <div style="padding:24px; background:var(--off-white); border-radius:var(--radius); border:1px solid var(--border);">
-            <h4 style="margin-bottom:8px;">Inventory</h4>
-            <p style="font-size:0.84rem; color:var(--muted); line-height:1.6;">Stock, batches, expiry alerts, near-expiry management, slow-moving SKU identification.</p>
-          </div>
-          <div style="padding:24px; background:var(--off-white); border-radius:var(--radius); border:1px solid var(--border);">
-            <h4 style="margin-bottom:8px;">Collections</h4>
-            <p style="font-size:0.84rem; color:var(--muted); line-height:1.6;">Outstanding by distributor, overdue invoices, automated reminders, credit limit monitoring.</p>
-          </div>
-          <div style="padding:24px; background:var(--off-white); border-radius:var(--radius); border:1px solid var(--border);">
-            <h4 style="margin-bottom:8px;">Procurement</h4>
-            <p style="font-size:0.84rem; color:var(--muted); line-height:1.6;">Auto-replenishment recommendations, vendor comparison, PO generation, goods receipt.</p>
-          </div>
-          <div style="padding:24px; background:var(--off-white); border-radius:var(--radius); border:1px solid var(--border);">
-            <h4 style="margin-bottom:8px;">Sales &amp; billing</h4>
-            <p style="font-size:0.84rem; color:var(--muted); line-height:1.6;">Order management, route-wise billing, distributor performance, scheme management.</p>
-          </div>
-          <div style="padding:24px; background:var(--off-white); border-radius:var(--radius); border:1px solid var(--border);">
-            <h4 style="margin-bottom:8px;">Distribution</h4>
-            <p style="font-size:0.84rem; color:var(--muted); line-height:1.6;">Delivery planning, van sales, fulfilment tracking, route optimization intelligence.</p>
-          </div>
-          <div style="padding:24px; background:var(--off-white); border-radius:var(--radius); border:1px solid var(--border);">
-            <h4 style="margin-bottom:8px;">Finance</h4>
-            <p style="font-size:0.84rem; color:var(--muted); line-height:1.6;">Cash flow, ledger reconciliation, TDS/GST compliance, bank statement analysis.</p>
-          </div>
-          <div style="padding:24px; background:var(--off-white); border-radius:var(--radius); border:1px solid var(--border);">
-            <h4 style="margin-bottom:8px;">Compliance</h4>
-            <p style="font-size:0.84rem; color:var(--muted); line-height:1.6;">Schedule-H tracking, narcotics register, drug licence management, CDSCO requirements.</p>
-          </div>
-          <div style="padding:24px; background:var(--off-white); border-radius:var(--radius); border:1px solid var(--border);">
-            <h4 style="margin-bottom:8px;">Intelligence</h4>
-            <p style="font-size:0.84rem; color:var(--muted); line-height:1.6;">Demand forecasting, customer risk scoring, distributor health signals, market trend analysis.</p>
+          <div class="workflow-grid reveal delay-1">
+            <article><span>01</span><h3>Inventory</h3><p>Stock, batches, expiry alerts, near-expiry handling, and slow-moving SKU signals.</p></article>
+            <article><span>02</span><h3>Collections</h3><p>Outstanding by distributor, overdue invoices, reminders, and credit limit monitoring.</p></article>
+            <article><span>03</span><h3>Procurement</h3><p>Auto-replenishment, vendor comparison, PO generation, and goods receipt workflows.</p></article>
+            <article><span>04</span><h3>Sales &amp; billing</h3><p>Order management, route-wise billing, distributor performance, and scheme management.</p></article>
+            <article><span>05</span><h3>Distribution</h3><p>Delivery planning, van sales, fulfilment tracking, and route optimization intelligence.</p></article>
+            <article><span>06</span><h3>Finance</h3><p>Cash flow, ledger reconciliation, TDS/GST compliance, and bank statement analysis.</p></article>
+            <article><span>07</span><h3>Compliance</h3><p>Schedule-H tracking, narcotics register, drug licence management, and CDSCO requirements.</p></article>
+            <article><span>08</span><h3>Intelligence</h3><p>Demand forecasting, customer risk scoring, distributor health, and market trend signals.</p></article>
           </div>
         </div>
 
-        <div style="margin-top:48px; display:flex; gap:16px; flex-wrap:wrap;">
-          <button class="btn-teal" data-modal="investor">Talk to Ravi →</button>
-          <a href="team.html" class="btn-outline-teal">Meet the team →</a>
+        <div class="platform-final-cta reveal delay-2">
+          <p>The layer is specific because the workflows are specific.</p>
+          <div>
+            <button class="btn-teal" data-modal="investor">Talk to Ravi →</button>
+            <a href="team.html" class="btn-outline-teal">Meet the team →</a>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container footer-inner">
-      <div class="footer-brand"><img src="assets/nexpla-logo-transparent.png" alt="Nexpla" /><p>Building the intelligence layer for Pharma.</p></div>
-      <nav class="footer-nav"><a href="approach.html">Approach</a><a href="portfolio.html">Portfolio</a><a href="platform.html">Platform</a><a href="team.html">Team</a></nav>
-      <div class="footer-contact"><a href="mailto:rc@nexpla.com">rc@nexpla.com</a><span>© <span id="year"></span> Nexpla</span></div>
+    <div class="container">
+      <div class="footer-shell">
+        <div class="footer-brand">
+          <img src="assets/nexpla-logo-transparent.png" alt="Nexpla" />
+          <p>AI-Native Operating System for India’s Pharma Supply Chain.</p>
+          <div class="footer-status"><span></span>AI-native ERP rebuild underway</div>
+        </div>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="approach.html">Approach</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="platform.html">Platform</a>
+          <a href="team.html">Team</a>
+        </nav>
+        <div class="footer-contact">
+          <span>Investor access</span>
+          <a href="mailto:rc@nexpla.com">rc@nexpla.com</a>
+          <small>Ravi responds personally</small>
+        </div>
+        <div class="footer-bottom">
+          <span>© <span id="year"></span> Nexpla</span>
+          <div><span>Pharma ERP</span><span>AI agents</span><span>Workflow intelligence</span></div>
+        </div>
+      </div>
     </div>
   </footer>
 
   <button class="ask-fab" id="askFab"><img src="assets/nexpla-icon.png" alt="" /><span>Ask Nexpla</span></button>
-  <div class="ask-panel" id="askPanel" aria-hidden="true">
+  <div class="ask-panel" id="askPanel" aria-hidden="true" role="dialog" aria-label="Ask Nexpla assistant">
     <div class="ask-panel-header">
-      <div class="ask-panel-brand"><img src="assets/nexpla-icon.png" alt="" /><div><b>Ask Nexpla</b><small>AI · Grounded in our deck</small></div></div>
-      <button class="ask-close" id="askClose" aria-label="Close">×</button>
+      <div class="ask-panel-brand"><img src="assets/nexpla-icon.png" alt="" /><div><b>Ask Nexpla</b><small>AI · Grounded in our deck <span class="ask-live"><i></i>Live</span></small></div></div>
+      <button class="ask-close" id="askClose" aria-label="Close Ask Nexpla">×</button>
     </div>
     <div class="ask-messages" id="askMessages"><div class="ask-msg assistant">What would you like to know about the platform?</div></div>
     <div class="ask-suggestions" id="askSuggestions">
@@ -237,9 +268,9 @@
     </div>
   </div>
 
-  <div class="modal-overlay" id="investorModal" aria-hidden="true">
+  <div class="modal-overlay" id="investorModal" aria-hidden="true" role="dialog" aria-label="Investor enquiry">
     <div class="modal-box">
-      <button class="modal-close" data-close="investorModal">×</button>
+      <button class="modal-close" data-close="investorModal" aria-label="Close popup">×</button>
       <div class="modal-label">Investor enquiry</div>
       <h2>Let's talk about Nexpla.</h2>
       <p>Raising USD 500K for the first transformation. Ravi responds personally.</p>
@@ -255,9 +286,9 @@
     </div>
   </div>
 
-  <div class="modal-overlay" id="partnerModal" aria-hidden="true">
+  <div class="modal-overlay" id="partnerModal" aria-hidden="true" role="dialog" aria-label="For ERP owners">
     <div class="modal-box">
-      <button class="modal-close" data-close="partnerModal">×</button>
+      <button class="modal-close" data-close="partnerModal" aria-label="Close popup">×</button>
       <div class="modal-label">For ERP owners</div>
       <h2>Your software's next chapter.</h2>
       <p>We work with established pharma ERP businesses. Everything stays confidential.</p>

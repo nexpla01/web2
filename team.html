@@ -13,148 +13,232 @@
   <header class="nav nav-light" id="nav">
     <a href="/" class="nav-logo"><img src="assets/nexpla-logo-transparent.png" alt="Nexpla" /></a>
     <nav class="nav-links" aria-label="Primary">
+      <a href="index.html">Home</a>
       <a href="approach.html">Approach</a>
       <a href="portfolio.html">Portfolio</a>
       <a href="platform.html">Platform</a>
-      <a href="team.html" style="color:var(--teal)">Team</a>
+      <a href="team.html" class="active">Team</a>
     </nav>
     <div class="nav-actions">
       <button class="btn-ghost" data-modal="partner">For ERP Owners</button>
       <button class="btn-teal" data-modal="investor">Investor Enquiry</button>
     </div>
-    <button class="nav-mobile-toggle" id="navToggle" aria-label="Open menu"><span></span><span></span></button>
+    <button class="nav-mobile-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
   </header>
 
   <div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Home</a>
     <a href="approach.html">Approach</a>
     <a href="portfolio.html">Portfolio</a>
     <a href="platform.html">Platform</a>
     <a href="team.html">Team</a>
     <button data-modal="investor" class="btn-teal">Investor Enquiry</button>
+    <button data-modal="partner">For ERP Owners</button>
   </div>
 
-  <main>
-    <section class="page-hero">
-      <div class="container">
-        <div class="section-label">The team</div>
-        <h1>The right team to build<br />intelligence for Pharma.</h1>
-        <p>We are here to build what's next, not to run what's legacy. Pharma DNA. AI-native builders. ERP connectivity. Execution mindset.</p>
+  <main class="team-page-main">
+    <section class="team-ai-hero">
+      <div class="container team-ai-hero-grid">
+        <div class="team-ai-copy reveal">
+          <div class="section-label">The team</div>
+          <h1>Built by industry operators.</h1>
+          <p>We are here to build what's next, not to run what's legacy. Pharma DNA, AI-native engineering, ERP connectivity, and execution discipline in one focused team.</p>
+          <div class="team-ai-chips">
+            <span>Pharma supply chain</span>
+            <span>AI systems</span>
+            <span>ERP partnerships</span>
+          </div>
+        </div>
+
+        <div class="team-ai-orbital reveal delay-1" aria-label="Team operating graph">
+          <div class="team-ai-rings" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="team-ai-core">
+            <img src="assets/nexpla-icon.png" alt="" />
+            <strong>Nexpla</strong>
+            <small>AI-Native Operating System</small>
+          </div>
+          <div class="team-ai-person person-rc"><span>RC</span><p>Market access</p></div>
+          <div class="team-ai-person person-ag"><span>AG</span><p>Architecture</p></div>
+          <div class="team-ai-person person-as"><span>AS</span><p>ERP network</p></div>
+          <div class="team-ai-person person-vr"><span>VR</span><p>Scale strategy</p></div>
+        </div>
       </div>
     </section>
 
-    <section class="section-pad">
+    <section class="team-roster-section section-pad">
       <div class="container">
-        <div class="team-grid-full">
-
-          <div class="team-card-full">
-            <div class="tc-avatar">RC</div>
-            <div class="tc-info">
-              <h3>Ravi Chandra</h3>
-              <p class="tc-role">Cofounder &amp; CEO</p>
-              <p class="tc-bio">Previously built MedPay (Medway Technologies) — a pharma technology company with 100,000+ pharmacies across India, supply chain financing, soundbox deployments, and ERP integrations. He has operated at scale inside the exact ecosystem Nexpla is rebuilding.</p>
-              <ul class="tc-points">
-                <li>MedPay: 100K+ pharmacy network, supply chain financing, and ERP integrations across India — built from zero</li>
-                <li>17+ years in pharma supply chain and operations across manufacturers, distributors, and retailers</li>
-                <li>Knows every layer of the Indian pharma distribution stack from the inside — the workflows, the pain points, the relationships</li>
-                <li>Existing network gives Nexpla direct channel access to the end customers of every pharma ERP we target</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="team-card-full">
-            <div class="tc-avatar">AG</div>
-            <div class="tc-info">
-              <h3>Anuj Gupta</h3>
-              <p class="tc-role">Cofounder &amp; CTO</p>
-              <p class="tc-bio">10+ years building products at scale, with hands-on experience in modern architecture and AI. The technical lead on the rebuild and intelligence layer.</p>
-              <ul class="tc-points">
-                <li>Built products at scale — from architecture design through to production systems used by thousands of users</li>
-                <li>Hands-on expertise in AI systems, large language model integration, and agentic architectures</li>
-                <li>Experience migrating legacy systems to modern cloud-native infrastructure</li>
-                <li>Deep knowledge of the technical challenges of rebuilding ERP systems with AI</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="team-card-full">
-            <div class="tc-avatar">AS</div>
-            <div class="tc-info">
-              <h3>Anamika Shrivastava</h3>
-              <p class="tc-role">Sales &amp; Operations</p>
-              <p class="tc-bio">Has built and managed hundreds of ERP partnerships across India and played a central role in creating the largest pharma ecosystem network in the country.</p>
-              <ul class="tc-points">
-                <li>100s of ERP partnerships managed pan India — knows the owners, the dynamics, and the deal structures</li>
-                <li>Experience creating and operating the largest pharma ecosystem — connects Nexpla to the industry's existing networks</li>
-                <li>Understands both the commercial and operational sides of pharma software businesses</li>
-                <li>Leads partnership conversations with ERP owners with credibility and industry relationships</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="team-card-full">
-            <div class="tc-avatar">VR</div>
-            <div class="tc-info">
-              <h3>Venkat Raju</h3>
-              <p class="tc-role">Advisor</p>
-              <p class="tc-bio">Global operator, entrepreneur, and investor with deep experience in building and scaling technology businesses across AI, SaaS, and enterprise software.</p>
-              <ul class="tc-points">
-                <li>Global operator with experience building and running technology businesses across multiple markets</li>
-                <li>Investor and advisor to AI and technology companies — brings strategic perspective on timing and positioning</li>
-                <li>Understands what it takes to scale software businesses and the dynamics of the AI transition</li>
-                <li>Provides advisory on strategy, fundraising, and executive decisions</li>
-              </ul>
-            </div>
-          </div>
-
-        </div>
-
-        <div style="background:var(--ink); border-radius:var(--radius-lg); padding:48px; margin-top:40px; display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:center;">
+        <div class="team-roster-head reveal">
           <div>
-            <div class="section-label light">Why this team</div>
-            <h2 style="color:var(--white); margin-bottom:16px;">Four things that matter.<br />This team has all of them.</h2>
-            <p style="color:rgba(255,255,255,0.55); font-size:0.96rem; line-height:1.7;">Building an AI-native ERP for pharma requires a very specific combination. Domain expertise. Technical depth. Industry relationships. And the execution discipline to do it before someone else does.</p>
+            <div class="section-label">Leadership matrix</div>
+            <h2>One team. Four operating strengths.</h2>
           </div>
-          <div style="display:grid; grid-template-columns:1fr 1fr; gap:24px;">
-            <div>
-              <h4 style="color:var(--white); margin-bottom:6px; font-size:0.92rem;">Pharma DNA</h4>
-              <p style="color:rgba(255,255,255,0.70); font-size:0.90rem; line-height:1.65;">17+ years operating in pharma. Not consultants — practitioners.</p>
+          <p>Industry access, architecture, ERP connectivity and strategic scale are covered in one operating team.</p>
+        </div>
+
+        <div class="team-command-grid">
+          <aside class="team-command-panel reveal delay-1">
+            <span>Team operating system</span>
+            <h3>Built for the hard part of AI transformation.</h3>
+            <p>The team combines pharma operating depth, AI-native product building, ERP relationships and strategic network.</p>
+            <div class="team-command-metrics">
+              <div><strong>100K+</strong><small>pharmacy network</small></div>
+              <div><strong>100s</strong><small>ERP relationships</small></div>
+              <div><strong>10+ yrs</strong><small>AI/product scale</small></div>
             </div>
-            <div>
-              <h4 style="color:var(--white); margin-bottom:6px; font-size:0.92rem;">AI-Native Builders</h4>
-              <p style="color:rgba(255,255,255,0.70); font-size:0.90rem; line-height:1.65;">Technical team that has built real AI systems at scale. Not first-timers.</p>
-            </div>
-            <div>
-              <h4 style="color:var(--white); margin-bottom:6px; font-size:0.92rem;">ERP Relationships</h4>
-              <p style="color:rgba(255,255,255,0.70); font-size:0.90rem; line-height:1.65;">100s of ERP partnerships managed. The industry calls back when we call. Deal #1 is proof.</p>
-            </div>
-            <div>
-              <h4 style="color:var(--white); margin-bottom:6px; font-size:0.92rem;">Execution Mindset</h4>
-              <p style="color:rgba(255,255,255,0.70); font-size:0.90rem; line-height:1.65;">We have built businesses, not decks. We know what it takes to actually ship.</p>
-            </div>
+          </aside>
+
+          <div class="team-command-list">
+            <article class="team-command-card reveal delay-1">
+              <div class="team-command-id">
+                <div class="tc-avatar">RC</div>
+                <span>01</span>
+              </div>
+              <div class="team-command-copy">
+                <div class="team-command-title">
+                  <div>
+                    <h3>Ravi Chandra</h3>
+                    <p class="tc-role">Cofounder &amp; CEO</p>
+                  </div>
+                  <strong>Market operator</strong>
+                </div>
+                <p class="tc-bio">17+ years across healthcare & pharma with deep supply chain and operations experience.</p>
+                <div class="team-command-tags">
+                  <span>17+ years in pharma</span>
+                  <span>Customer access</span>
+                  <span>Distribution workflows</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="team-command-card reveal delay-2">
+              <div class="team-command-id">
+                <div class="tc-avatar">AG</div>
+                <span>02</span>
+              </div>
+              <div class="team-command-copy">
+                <div class="team-command-title">
+                  <div>
+                    <h3>Anuj Gupta</h3>
+                    <p class="tc-role">Cofounder &amp; CTO</p>
+                  </div>
+                  <strong>AI systems</strong>
+                </div>
+                <p class="tc-bio">10+ years building products at scale, with hands-on architecture and AI experience.</p>
+                <div class="team-command-tags">
+                  <span>Agentic architecture</span>
+                  <span>Cloud migration</span>
+                  <span>Production systems</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="team-command-card reveal delay-3">
+              <div class="team-command-id">
+                <div class="tc-avatar">AS</div>
+                <span>03</span>
+              </div>
+              <div class="team-command-copy">
+                <div class="team-command-title">
+                  <div>
+                    <h3>Anamika Shrivastava</h3>
+                    <p class="tc-role">Sales &amp; Operations</p>
+                  </div>
+                  <strong>ERP partnerships</strong>
+                </div>
+                <p class="tc-bio">100s of ERP partnerships pan India and experience creating the largest pharma ecosystem.</p>
+                <div class="team-command-tags">
+                  <span>ERP owners</span>
+                  <span>Partnerships</span>
+                  <span>Operating network</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="team-command-card reveal delay-4">
+              <div class="team-command-id">
+                <div class="tc-avatar">VR</div>
+                <span>04</span>
+              </div>
+              <div class="team-command-copy">
+                <div class="team-command-title">
+                  <div>
+                    <h3>Venkat Raju</h3>
+                    <p class="tc-role">Advisor</p>
+                  </div>
+                  <strong>Scale advisor</strong>
+                </div>
+                <p class="tc-bio">Global operator, entrepreneur & investor with experience across AI, technology and scale.</p>
+                <div class="team-command-tags">
+                  <span>Scale strategy</span>
+                  <span>Fundraising</span>
+                  <span>Executive decisions</span>
+                </div>
+              </div>
+            </article>
           </div>
         </div>
 
-        <div style="margin-top:48px; display:flex; gap:16px; flex-wrap:wrap;">
-          <button class="btn-teal" data-modal="investor">Talk to Ravi →</button>
-          <a href="mailto:rc@nexpla.com" class="btn-outline-teal">rc@nexpla.com →</a>
+        <div class="team-operating-system reveal">
+          <div class="team-os-copy">
+            <div class="section-label light">Why this team</div>
+            <h2>Built for the hard part of AI transformation.</h2>
+            <p>We are here to build what’s next, not to run what’s legacy.</p>
+          </div>
+          <div class="team-os-grid">
+            <div><span>01</span><strong>Pharma DNA</strong><p>Pharma DNA</p></div>
+            <div><span>02</span><strong>AI-native builders</strong><p>AI-Native Builders</p></div>
+            <div><span>03</span><strong>ERP relationships</strong><p>ERP Connectivity</p></div>
+            <div><span>04</span><strong>Execution mindset</strong><p>Strategic Network</p></div>
+          </div>
+        </div>
+
+        <div class="team-page-cta reveal">
+          <p>Ready to see how this team turns legacy ERP into an intelligence layer?</p>
+          <div>
+            <button class="btn-teal" data-modal="investor">Talk to Ravi →</button>
+            <a href="mailto:rc@nexpla.com" class="btn-outline-teal">rc@nexpla.com →</a>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container footer-inner">
-      <div class="footer-brand"><img src="assets/nexpla-logo-transparent.png" alt="Nexpla" /><p>Building the intelligence layer for Pharma.</p></div>
-      <nav class="footer-nav"><a href="approach.html">Approach</a><a href="portfolio.html">Portfolio</a><a href="platform.html">Platform</a><a href="team.html">Team</a></nav>
-      <div class="footer-contact"><a href="mailto:rc@nexpla.com">rc@nexpla.com</a><span>© <span id="year"></span> Nexpla</span></div>
+    <div class="container">
+      <div class="footer-shell">
+        <div class="footer-brand">
+          <img src="assets/nexpla-logo-transparent.png" alt="Nexpla" />
+          <p>AI-Native Operating System for India’s Pharma Supply Chain.</p>
+          <div class="footer-status"><span></span>AI-native ERP rebuild underway</div>
+        </div>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="approach.html">Approach</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="platform.html">Platform</a>
+          <a href="team.html">Team</a>
+        </nav>
+        <div class="footer-contact">
+          <span>Investor access</span>
+          <a href="mailto:rc@nexpla.com">rc@nexpla.com</a>
+          <small>Ravi responds personally</small>
+        </div>
+        <div class="footer-bottom">
+          <span>© <span id="year"></span> Nexpla</span>
+          <div><span>Pharma ERP</span><span>AI agents</span><span>Workflow intelligence</span></div>
+        </div>
+      </div>
     </div>
   </footer>
 
   <button class="ask-fab" id="askFab"><img src="assets/nexpla-icon.png" alt="" /><span>Ask Nexpla</span></button>
-  <div class="ask-panel" id="askPanel" aria-hidden="true">
+  <div class="ask-panel" id="askPanel" aria-hidden="true" role="dialog" aria-label="Ask Nexpla assistant">
     <div class="ask-panel-header">
-      <div class="ask-panel-brand"><img src="assets/nexpla-icon.png" alt="" /><div><b>Ask Nexpla</b><small>AI · Grounded in our deck</small></div></div>
-      <button class="ask-close" id="askClose" aria-label="Close">×</button>
+      <div class="ask-panel-brand"><img src="assets/nexpla-icon.png" alt="" /><div><b>Ask Nexpla</b><small>AI · Grounded in our deck <span class="ask-live"><i></i>Live</span></small></div></div>
+      <button class="ask-close" id="askClose" aria-label="Close Ask Nexpla">×</button>
     </div>
     <div class="ask-messages" id="askMessages"><div class="ask-msg assistant">What would you like to know about the Nexpla team?</div></div>
     <div class="ask-suggestions" id="askSuggestions">
@@ -168,9 +252,9 @@
     </div>
   </div>
 
-  <div class="modal-overlay" id="investorModal" aria-hidden="true">
+  <div class="modal-overlay" id="investorModal" aria-hidden="true" role="dialog" aria-label="Investor enquiry">
     <div class="modal-box">
-      <button class="modal-close" data-close="investorModal">×</button>
+      <button class="modal-close" data-close="investorModal" aria-label="Close popup">×</button>
       <div class="modal-label">Investor enquiry</div>
       <h2>Let's talk about Nexpla.</h2>
       <p>Raising USD 500K for the first transformation. Ravi responds personally.</p>
@@ -186,9 +270,9 @@
     </div>
   </div>
 
-  <div class="modal-overlay" id="partnerModal" aria-hidden="true">
+  <div class="modal-overlay" id="partnerModal" aria-hidden="true" role="dialog" aria-label="For ERP owners">
     <div class="modal-box">
-      <button class="modal-close" data-close="partnerModal">×</button>
+      <button class="modal-close" data-close="partnerModal" aria-label="Close popup">×</button>
       <div class="modal-label">For ERP owners</div>
       <h2>Your software's next chapter.</h2>
       <p>We work with established pharma ERP businesses. Everything stays confidential.</p>

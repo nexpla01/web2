@@ -53,11 +53,12 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.style.overflow = 'hidden';
   }
   function closeModal(id) {
-    const el = modals[id];
+    const el = modals[id] || document.getElementById(id);
     if (!el) return;
     el.classList.remove('open');
     el.setAttribute('aria-hidden', 'true');
-    document.body.style.overflow = '';
+    const anyOpen = Object.values(modals).some(modal => modal && modal.classList.contains('open'));
+    if (!anyOpen) document.body.style.overflow = '';
   }
 
   // Open buttons
@@ -116,63 +117,82 @@ document.addEventListener('DOMContentLoaded', () => {
   let askOpen = false;
   let conversationHistory = [];
 
-  const SYSTEM_PROMPT = `You are Ask Nexpla — an AI assistant for investors and partners exploring Nexpla. Be direct, confident, and concise. Investors want clear answers, not marketing fluff. Answer in 2-4 sentences unless the question genuinely needs more.
+  const SYSTEM_PROMPT = `You are Ask Nexpla — an AI assistant for investors and ERP partners exploring Nexpla. Be direct, factual and concise. Ground answers in the current investor deck and do not invent facts.
 
 COMPANY:
-Nexpla modernizes established pharma ERP businesses and transforms them into AI-native platforms. Founded by Ravi Chandra (CEO) and Anuj Gupta (CTO), based in Bangalore.
+Nexpla is building an AI-Native Operating System for India’s Pharma Supply Chain. The model is Partner → Modernize → Layer → Scale.
 
-STRATEGY — MODERNIZE · REBUILD · REPEAT:
-1. Partner with profitable legacy pharma ERP businesses (they have customers, data, domain knowledge, trust — but run on outdated tech)
-2. Modernize: Streamline operations, improve reliability and UX, unlock immediate value
-3. Rebuild: Rebuild the core platform with AI-native architecture
-4. Repeat: One playbook, compounding across multiple ERPs
+THE PROBLEM:
+- India’s domestic pharma market is ~$60B in FY26.
+- The industry includes 3k+ pharma companies, 60k+ distributors and 1.3M+ retailers.
+- Critical operations still depend on screen-driven, manual, fragmented software built for a pre-AI world.
+- MARG ERP was established in 1992 and reported ~$11M FY2025 revenue.
 
-THE MARKET:
-- Indian pharma market: ~$60B
-- MARG ERP (founded 1992, Foxpro/DBF architecture) holds an estimated 60%+ market share among Indian pharma distributors
-- In 2026, pharma ERP users are actively searching for modern alternatives — cloud access, automated GST compliance, modern UX
-- This is not a shrinking market being disrupted — it's a growing market waiting for a credible modern replacement
-- India ERP software market projected to grow from $5.7B (2025) to $25.47B by 2035 (CAGR 15.4%)
-- AI changed the economics of rebuilding: before AI, needed large teams, years, big budgets. With AI agents, dramatically faster and cheaper.
+THE INSIGHT:
+- The ERP is the gatekeeper between critical transactions in the pharma supply chain.
+- It holds customers, products, pricing, inventory, orders, demand, invoices, payments, credit and relationships.
+- The software is replaceable. The accumulated context — workflows, relationships, data and trust — is not.
 
-CURRENT PORTFOLIO (names not disclosed — pharma is a closed industry, owners don't want public announcements):
-- ERP Partner #1: Agreement reached, modernisation underway. 300+ customers (150+ distributors, 150+ retailers), $30M+ transactional data, 20+ years in market.
-- Pipeline: 6+ additional pharma ERPs identified and in early conversations. Raising to close the next two.
+THE CONSTRAINT:
+- Without strategic alignment, Nexpla would need to negotiate separately with ERP owners, enable customers individually and depend on separate roadmaps.
+- With a strategic partnership, one modernization roadmap can reach the installed base while preserving the underlying context.
 
-THE PLATFORM:
-- Layer 1 — AI-Native ERP: Data, Workflows, Business Logic
-- Layer 2 — Intelligent Layer: Understand → Decide → Execute (natural language, recommendations, agentic actions)
-- Layer 3 — Platform: APIs, Agents, Services (for Businesses, Fintech, Developers & ISVs, AI Agents)
+FOUNDERS INSIGHT:
+- The team has lived the problem for 6+ years.
+- 100K+ pharmacies onboarded / reached through the broader pharma network.
+- $500K+ monthly payment volume in prior operating infrastructure.
+- Supply-chain financing, payments infrastructure and pan-India network experience.
 
-THE TRANSFORMATION:
-Before: Navigate → Click → Search → Wait
-After: Ask → Get answers → Take action
-Example: "Show me outstanding payments from top 20 distributors" → ₹18.4L outstanding, 7 invoices overdue, one-click send reminders. Or voice: "Create PO for ABC Pharma, 5,000 Amoxicillin 250mg" — confirmed instantly.
+WHAT WE PARTNER WITH:
+- Customers: 300+ installed base on the first ERP.
+- Data: 20+ years of transactions.
+- Workflows: 300+ modules.
+- Domain knowledge: embedded pharma processes.
+- The goal is to preserve the context needed to modernize with intelligence.
 
-THE RAISE:
-Raising USD 500K:
-- First ERP partnership already closed (deal #1 done, smaller cost already handled)
-- Raise funds: closing 2 more ERP partnerships from the 6+ identified in pipeline + 12-18 months transformation runway across all three
-- This is not a "build from zero" raise — it's a "we proved it, now scale it" raise
+PLATFORM:
+- ERP remains the system of record: customers, workflows, transactions.
+- Nexpla OS adds intelligence, agents and APIs.
+- Commerce, fintech and open-platform services sit above the core.
+- Partnership turns the ERP from software into an extensible operating platform.
+
+PLAYBOOK:
+1. Partner with established ERPs with existing customers, proven revenue, deep workflow knowledge and embedded teams.
+2. Modernize with AI-native architecture, voice + chat, automated support, zero training and a modern cloud stack.
+3. Layer platform services: supply-chain intelligence, financing, commerce/order flows, APIs and agents.
+4. Scale through the next strategic partnership, enrich the data, compound the network and strengthen the platform.
+- First ERP gives 300+ customers day one and $30M+ annual transactions.
+- Same customers can support multiple revenue streams versus one for legacy ERPs.
+
+BUSINESS MODEL:
+- ERP SaaS: $28K current annual revenue.
+- Transaction layer: commerce + payments.
+- Financial layer: supply-chain financing using transaction history for underwriting.
+- Intelligence layer: data + APIs + agents.
+
+PROOF OF EXECUTION:
+- ERP #1 agreement signed; closing in progress.
+- Full platform architecture designed: OS stack, AI layer, API framework and revenue model.
+- Live AI workflows built and deployed.
+- Paid pilots running with voice + chat and real pharma data.
+- Team assembled and advisors confirmed.
+- ERP #2 shortlisted; conversations started around a 3,000+ customer platform with 20+ years of history.
 
 TEAM:
-- Ravi Chandra, CEO: Built MedPay (Medway Technologies) — 100K+ pharmacy network across India, supply chain financing, ERP integrations. 17+ yrs in pharma. rc@nexpla.com
-- Anuj Gupta, CTO: 10+ yrs building products at scale. Architecture & AI.
-- Anamika Shrivastava, Sales & Ops: 100s of ERP partnerships pan India. Built largest pharma ecosystem.
-- Venkat Raju, Advisor: Global operator, entrepreneur & investor. AI, technology & scale.
+- Ravi Chandra, Cofounder & CEO: 17+ years across healthcare & pharma; deep supply chain and operations experience.
+- Anuj Gupta, Cofounder & CTO: 10+ years building products at scale; hands-on architecture and AI.
+- Anamika Shrivastava, Sales & Ops: 100s of ERP partnerships pan India; experience creating the largest pharma ecosystem.
+- Venkat Raju, Advisor: Global operator, entrepreneur & investor; AI, technology & scale.
 
-UNFAIR ADVANTAGES (why Nexpla can do this and others can't):
-1. Ravi's MedPay network: 100K+ pharmacies = direct channel to the end customers of every pharma ERP we target. No cold outreach.
-2. Anamika's ERP relationships: 100s of partnerships managed = ERP owners already know her. Deal sourcing is relationship-driven, not cold outbound.
-3. Niche focus: We only do India pharma distribution ERP. Not a horizontal play. Every decision comes from years inside this market.
+THE RAISE:
+- Raising $500K.
+- Allocation: $80K+ ERP #1 partnership close; $220K+ ERP #2 strategic partnership; $200K product, AI & integration.
+- 15-month plan: expand strategic partnerships, get AI workflows live, launch 2+ new revenue streams, reach $100M TPV and build the next partnership pipeline; Series A ready.
 
-WHAT TO SAY IF ASKED:
-- About ERP names: "We don't disclose partner names publicly — pharma is a closed industry and ERP owners prefer confidentiality about transitions. Happy to discuss details confidentially."
-- About revenue: "We're pre-revenue, in the partnership and transformation phase. First ERP agreement is reached."
-- About valuation/terms: "We don't share that here — reach out to Ravi at rc@nexpla.com for a direct conversation."
-- About anything you don't know: Be honest, suggest rc@nexpla.com.
+If asked about partner names: do not invent or disclose names; say the deck does not name them publicly and details can be discussed confidentially with Ravi at rc@nexpla.com.
+If asked about valuation or terms: say they are not provided in the deck and direct them to rc@nexpla.com.
+If something is not in the deck, be transparent that it is not specified.`;
 
-End your reply with a CTA to rc@nexpla.com or the investor button only when it's genuinely relevant (not every message).`;
 
   function openAskPanel() {
     askOpen = true;
@@ -356,7 +376,7 @@ function initHeroDemo() {
     // greeting on first
     if (msgs.children.length === 0) {
       addEl(`<div class="demo-msg-ai">Good morning 👋 &nbsp;How can I help you today?</div>`);
-      await sleep(900);
+      await sleep(500);
     }
 
     await typeInInput(seq.query);
@@ -364,10 +384,10 @@ function initHeroDemo() {
     await flashSend();
     inputTxt.textContent = '';
     addUserMsg(seq.query);
-    await sleep(700);
+    await sleep(500);
 
     const thinking = addThinking();
-    await sleep(1400);
+    await sleep(850);
     thinking.remove();
 
     if (seq.response.type === 'card') {
@@ -379,10 +399,18 @@ function initHeroDemo() {
   }
 
   async function demoLoop() {
+    if (msgs.children.length === 0) {
+      addEl(`<div class="demo-msg-ai">Good morning 👋 &nbsp;How can I help you today?</div>`);
+      addUserMsg(SEQUENCES[0].query);
+      addCardResponse(SEQUENCES[0].response.data);
+      await sleep(1400);
+    }
+
     while (true) {
-      for (const seq of SEQUENCES) {
+      for (const seq of SEQUENCES.slice(1)) {
         await runSequence(seq);
       }
+      await runSequence(SEQUENCES[0]);
       // Reset
       await sleep(1500);
       msgs.innerHTML = '';
@@ -390,7 +418,48 @@ function initHeroDemo() {
   }
 
   // Start after hero entrance
-  setTimeout(demoLoop, 1400);
+  setTimeout(demoLoop, 700);
+}
+
+function initHeroDemoFollow() {
+  const hero = document.querySelector('.hero');
+  const demoWrap = document.querySelector('.hero-demo');
+  const demoWindow = document.querySelector('.demo-window');
+  const contentEnd = document.querySelector('.hero-stats');
+  if (!hero || !demoWrap || !demoWindow || !contentEnd) return;
+
+  let ticking = false;
+
+  function update() {
+    ticking = false;
+
+    if (window.innerWidth <= 900) {
+      demoWrap.style.transform = '';
+      return;
+    }
+
+    const heroRect = hero.getBoundingClientRect();
+    const normalTop = 136;
+    const stickyTop = 112;
+    const bottomGap = 8;
+    const travel = Math.max(0, -heroRect.top + stickyTop - normalTop);
+    const contentBottom = contentEnd.offsetTop + contentEnd.offsetHeight;
+    const maxTravel = Math.max(0, contentBottom - demoWindow.offsetHeight - normalTop - bottomGap);
+    const y = Math.min(travel, maxTravel);
+
+    demoWrap.style.transform = `translate3d(0, ${y}px, 0)`;
+  }
+
+  function requestUpdate() {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(update);
+  }
+
+  window.addEventListener('scroll', requestUpdate, { passive: true });
+  window.addEventListener('resize', requestUpdate);
+  window.setInterval(requestUpdate, 180);
+  update();
 }
 
 // ── Count-up ────────────────────────────────────────────────
@@ -488,11 +557,151 @@ function initPlatformStack() {
   if (layers[0]) io.observe(layers[0]);
 }
 
+// ── Approach sticky scroll cards ────────────────────────────
+function initApproachScrollCards() {
+  const story = document.getElementById('approachScrollStory');
+  if (!story) return;
+
+  const stage = story.querySelector('.approach-scroll-stage');
+  const card = story.querySelector('.approach-scroll-card');
+  const steps = [...story.querySelectorAll('.approach-scroll-step')];
+  const stepEl = document.getElementById('approachCardStep');
+  const labelEl = document.getElementById('approachCardLabel');
+  const kickerEl = document.getElementById('approachCardKicker');
+  const titleEl = document.getElementById('approachCardTitle');
+  const bodyEl = document.getElementById('approachCardBody');
+  const pointsEl = document.getElementById('approachCardPoints');
+  const progress = [...story.querySelectorAll('.approach-scroll-progress i')];
+  const nodes = [...story.querySelectorAll('.diagram-node')];
+  if (!stage || !card || !steps.length || !titleEl || !bodyEl || !pointsEl) return;
+
+  let activeIndex = -1;
+  let ticking = false;
+  let transitionTimer = 0;
+
+  function render(index) {
+    const step = steps[index];
+    if (!step) return;
+
+    activeIndex = index;
+    card.classList.add('is-changing');
+    window.clearTimeout(transitionTimer);
+
+    transitionTimer = window.setTimeout(() => {
+      const number = step.dataset.step || String(index + 1).padStart(2, '0');
+      const label = step.dataset.label || '';
+      const pointItems = (step.dataset.points || '').split('|').filter(Boolean);
+      const nodeItems = (step.dataset.nodes || '').split('|').filter(Boolean);
+
+      if (stepEl) stepEl.textContent = number;
+      if (labelEl) labelEl.textContent = label;
+      if (kickerEl) kickerEl.textContent = `Operating move ${number}`;
+      titleEl.textContent = step.dataset.title || '';
+      bodyEl.textContent = step.dataset.body || '';
+      pointsEl.innerHTML = pointItems.map(item => `<li>${item}</li>`).join('');
+
+      nodes.forEach((node, nodeIndex) => {
+        node.textContent = nodeItems[nodeIndex] || node.textContent;
+      });
+
+      progress.forEach((bar, barIndex) => {
+        bar.classList.toggle('active', barIndex <= index);
+      });
+
+      card.classList.remove('is-changing');
+    }, 170);
+  }
+
+  function getMetrics() {
+    const storyRect = story.getBoundingClientRect();
+    const navHeight = document.querySelector('.nav')?.offsetHeight || 72;
+    const topOffset = Math.max(86, navHeight + 20);
+    const storyTop = storyRect.top + window.scrollY;
+    const storyHeight = story.offsetHeight;
+    const stageHeight = stage.offsetHeight;
+    const start = storyTop - topOffset;
+    const end = storyTop + storyHeight - stageHeight - topOffset;
+
+    return {
+      end,
+      stageHeight,
+      start,
+      storyHeight,
+      storyRect,
+      topOffset,
+      total: Math.max(1, end - start),
+    };
+  }
+
+  function clearStagePosition() {
+    stage.removeAttribute('style');
+  }
+
+  function pinStage(metrics) {
+    const y = window.scrollY;
+
+    if (y < metrics.start) {
+      clearStagePosition();
+      return;
+    }
+
+    if (y >= metrics.end) {
+      stage.style.position = 'absolute';
+      stage.style.top = `${metrics.storyHeight - metrics.stageHeight}px`;
+      stage.style.left = '0';
+      stage.style.right = '0';
+      stage.style.width = '100%';
+      stage.style.minHeight = `${metrics.stageHeight}px`;
+      return;
+    }
+
+    stage.style.position = 'fixed';
+    stage.style.top = `${metrics.topOffset}px`;
+    stage.style.left = `${metrics.storyRect.left}px`;
+    stage.style.right = 'auto';
+    stage.style.width = `${metrics.storyRect.width}px`;
+    stage.style.minHeight = `${metrics.stageHeight}px`;
+  }
+
+  function getActiveIndex(metrics) {
+    const progress = (window.scrollY - metrics.start) / metrics.total;
+    const index = Math.floor(progress * steps.length);
+    return Math.max(0, Math.min(steps.length - 1, index));
+  }
+
+  function update() {
+    ticking = false;
+    const metrics = getMetrics();
+
+    const nextIndex = getActiveIndex(metrics);
+    pinStage(metrics);
+    if (nextIndex !== activeIndex) render(nextIndex);
+  }
+
+  function requestUpdate() {
+    if (window.innerWidth <= 760) {
+      clearStagePosition();
+      if (activeIndex !== 0) render(0);
+      return;
+    }
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(update);
+  }
+
+  window.addEventListener('scroll', requestUpdate, { passive: true });
+  window.addEventListener('resize', requestUpdate);
+  render(0);
+  requestUpdate();
+}
+
 // ── Boot all WOW ────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
   initHeroDemo();
+  initHeroDemoFollow();
   initCountUp();
   initScrollReveals();
   initEconBars();
   initPlatformStack();
+  initApproachScrollCards();
 });

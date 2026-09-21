@@ -1,13 +1,17 @@
-# Nexpla — Combined Website
+# Nexpla Website
 
-Next.js. Deploy on Vercel directly.
+Static site. No build step. Deploy directly on Vercel.
 
-## Run locally
-```bash
-npm install
-npm run dev
-```
+## Files
+- `index.html` — Homepage
+- `approach.html` — Strategy page
+- `portfolio.html` — ERP portfolio
+- `platform.html` — Platform architecture
+- `team.html` — Team page
+- `styles.css` — Design system
+- `app.js` — Navigation, modals, Ask Nexpla (Claude API)
+- `assets/` — Logo and icons
+- `vercel.json` — Vercel config (clean URLs, no trailing slash)
 
 ## Deploy
-Push to GitHub → Vercel auto-detects Next.js → builds and deploys.
-No config needed. Framework: Next.js.
+Push to GitHub → Vercel auto-deploys. No framework, no build command needed.
